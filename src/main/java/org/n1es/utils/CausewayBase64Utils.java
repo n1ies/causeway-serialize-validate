@@ -1,6 +1,5 @@
 package org.n1es.utils;
 
-import org.jetbrains.annotations.Nullable;
 
 import java.io.ByteArrayInputStream;
 import java.io.ByteArrayOutputStream;
@@ -43,7 +42,7 @@ public class CausewayBase64Utils {
 		}
 	}
 
-	public static final byte[] prepend(@Nullable final byte[] target, @Nullable final byte... bytes) {
+	public static final byte[] prepend(final byte[] target, final byte... bytes) {
 		if (target == null) {
 			return bytes == null ? null : (bytes).clone();
 		} else if (bytes == null) {
